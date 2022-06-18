@@ -1,0 +1,322 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav {
+  max-height: 4rem;
+  min-height: 4rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #949494;
+}
+
+input[type="text"] {
+  background: #ffffff;
+  margin-left: 3rem;
+  border: 0.0625rem solid #d6d6d6;
+  box-sizing: border-box;
+  border-radius: 3.125rem;
+  height: 1.675rem;
+  padding-left: 1rem;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  float: right;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: auto;
+}
+
+li {
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #929292;
+}
+
+.home {
+  color: #19b690;
+}
+
+a:hover {
+  border-bottom: 0.125rem solid #19b690;
+  padding-bottom: 0.1875rem;
+  color: #19b690;
+} */
+
+/* swiper styling */
+
+.swiper-slide:first-child {
+  padding-left: 1rem;
+}
+.swiper-slide {
+  width: 18rem !important;
+}
+.piechart-custom ul.recharts-default-legend {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  margin-top: 30% !important;
+}
+.linechart .recharts-legend-wrapper {
+  margin-bottom: -40px;
+}
+.active {
+  background: #eef8f5;
+  border-radius: 9px;
+  width: 100%;
+}
+.active svg {
+  filter: invert(50%) sepia(97%) saturate(338%) hue-rotate(114deg)
+    brightness(96%) contrast(94%);
+}
+.active .horXCp {
+  color: #1fb690 !important;
+}
+.menu-style a {
+  width: 100%;
+}
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.courses-table #active-table_wrapper {
+  padding: 10px;
+}
+.rdt_TableRow:nth-child(even) {
+  background-color: #eef8f5 !important;
+}
+.courses-table .dataTable.no-footer,
+.courses-table table.dataTable thead th {
+  border-bottom: 1px solid #d3d3d3;
+}
+.courses-table .dataTable tbody td {
+  padding: 15px 10px;
+  font-size: 14px;
+}
+.courses-table
+  .dataTables_wrapper
+  .dataTables_paginate
+  .paginate_button.current,
+.courses-table
+  .dataTables_wrapper
+  .dataTables_paginate
+  .paginate_button.current:hover {
+  color: #fff !important;
+  border: 1px solid #2ab995;
+  background-color: white;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #1fb690),
+    color-stop(100%, #1fb690)
+  );
+  background: -webkit-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -moz-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -ms-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -o-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: linear-gradient(to bottom, #2dba97 0%, #1fb690 100%);
+}
+.courses-table .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: white !important;
+  border: 1px solid #2ab995;
+  background-color: #585858;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #1fb690),
+    color-stop(100%, #1fb690)
+  );
+  background: -webkit-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -moz-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -ms-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: -o-linear-gradient(top, #2dba97 0%, #1fb690 100%);
+  background: linear-gradient(to bottom, #2dba97 0%, #1fb690 100%);
+}
+.course-btn {
+  background-color: transparent;
+  border: 0;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.student-port-table .rdt_Table {
+  background-color: transparent;
+  margin: 1rem;
+}
+.student-port-table > div {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.student-port-table .rdt_Table:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.student-port-table .rdt_TableHead .rdt_TableHeadRow {
+  border-radius: 0.938rem;
+  margin-bottom: 18px;
+  width: 98.5%;
+}
+.student-port-table .rdt_TableHead {
+  text-align: left;
+  cursor: pointer;
+}
+.student-port-table .rdt_TableBody {
+  display: block;
+  max-height: 50vh;
+  overflow: auto;
+  border-radius: 1.25rem;
+}
+.student-port-table .rdt_TableBody .rdt_TableRow {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  table-layout: fixed;
+}
+.student-port-table .rdt_TableBody .rdt_TableRow:nth-child(2n) {
+  background-color: #eef8f5;
+}
+.cus-label {
+  color: #c0c3c7;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+/* .react-sel-option #react-select-3-listbox {
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 999;
+  display: block;
+  touch-action: none;
+} */
+.react-sel-option .css-1s2u09g-control {
+  border: 0.125rem solid #edf0f8;
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+.input-style input {
+  padding-right: 3rem;
+  padding-left: 1.5rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  width: auto;
+  background: #ffffff;
+  border: 0.0125rem solid #edf0f8;
+  border-color: #19b690;
+  border-radius: 2.5rem;
+  position: relative;
+  height: 3rem;
+  line-height: 2.5rem;
+  width: 100%;
+}
+.input-style {
+  position: relative;
+}
+.input-style > svg {
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  filter: invert(50%) sepia(97%) saturate(338%) hue-rotate(114deg)
+    brightness(96%) contrast(94%);
+}
+.input-style div > svg {
+  position: absolute;
+  right: 45px;
+  top: 22px;
+  filter: invert(50%) sepia(97%) saturate(338%) hue-rotate(114deg)
+    brightness(96%) contrast(94%);
+}
+.favrt-icon {
+  cursor: pointer;
+}
+.universal-search {
+  background-color: white;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px #efefef;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+.loader {
+  position: relative;
+}
